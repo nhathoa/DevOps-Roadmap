@@ -120,3 +120,8 @@ Cách sửa nội dung 1 commit:
 ```bash
 git commit --amend
 ```
+
+#### Git diff
+Lệnh ```git diff``` để so sánh những thay đổi với file đã được tracked trước đó.
+
+
