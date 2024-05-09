@@ -55,7 +55,8 @@ git clone <repo url>
   Theo mặc định, lênh này sẽ tạo một remote connnection tên là 'origin' trỏ về chính repo được clone.
 
 #### Git config
-  Lệnh này dùng để cấu hình cho git
+  Lệnh này dùng để cấu hình cho git.
+  
   ```git config --local```: Để cấu hình cho git ở local của repo thôi. Mặc định gõ ```git config ``` mà không thêm gì thì sẽ là cấu hình local.
 
   ```git config --global```: Để cấu hình cho người dùng cụ thể. Tức là cấu hình ở mức người dùng.
