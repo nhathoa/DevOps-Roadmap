@@ -96,5 +96,27 @@ Thay vì mỗi lần sửa file gì thì cần commit vào dự án. ```git add`
 #### Git commit
 ```git commit``` dùng để lưu lại những gì đã ở stage vào repo. Lệnh này sẽ chạy sau lệnh ```git add```.
 
+Commit ghi lại trạng thái của repo tại một thời điểm nào đó. 
+Git ghi lại nội dung của từng file trong mỗi lần commit.
 
+Câu lệnh:
+```bash
+git commit -m "noi dung commit"
 
+#Lệnh này commit toàn bộ các file đã được tracked và các file đó có sự thay đổi.
+git commit -a
+```
+
+Một số quy tắt viết message cho commit:
+- Tách tiêu đề với phần thân của nội dung commit bằng một dòng trắng
+- Tiêu đề giới hạn 50 ký tự
+- Viết hoa chữ cái đầu ở dòng tiêu đề
+- Không kết thúc tiêu đề bằng dấu chấm
+- Sử dụng câu mệnh lệnh trong tiêu đề
+- Giới hạn 72 ký tự mỗi dòng ở phần thân của nội dung commit
+- Trả lời câu hỏi điều gì, tại sao và như thế nào ở phần thân của nội dung commit
+
+Cách sửa nội dung 1 commit:
+```bash
+git commit --amend
+```
