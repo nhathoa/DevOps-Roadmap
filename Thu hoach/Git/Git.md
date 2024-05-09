@@ -29,5 +29,58 @@ https://github.com/git-ecosystem/git-credential-manager
 Chỉ cần cài vào thôi. Lần sau khi clone hay gì đó, Git sẽ yêu cầu đăng nhập, và thông tin tự động được lưu ở GCM.
 
 
+### Khởi tạo Git repo
+  Để khởi tạo một repo mới dùng lệnh:
+```bash
+git init
+```
+  Git sẽ tự tạo một thư mục ```.git``` ở thư mục hiện tại
+
+  Để Clone một git repo có sẵn, sử dụng lệnh:
+```bash
+git clone <repo url>
+```
+
+  Trong đó ```repo url``` có định dạng: ```git@HOSTNAME:USERNAME/REPONAME.git ```
+
+  Khi sử dụng lệnh ```git clone```, Git sẽ tự động cấu hình remoete URL là URL của repo bạn đã clone từ đó.
 
 
+  #### Git init
+
+  Lệnh ```git init``` dùng để khởi tạo một repo mới. Khi chạy sẽ tạo ra một folder ```.git``` ở thư mục hiện tại. Thư mục này chứa toàn bộ metadata của repository.
+
+#### Git clone
+  Lệnh ```git clone``` sẽ sao chép một repo khác.
+  Theo mặc định, lênh này sẽ tạo một remote connnection tên là 'origin' trỏ về chính repo được clone.
+
+#### Git config
+  Lệnh này dùng để cấu hình cho git
+  ```git config --local```: Để cấu hình cho git ở local của repo thôi. Mặc định gõ ```git config ``` mà không thêm gì thì sẽ là cấu hình local.
+
+  ```git config --global```: Để cấu hình cho người dùng cụ thể. Tức là cấu hình ở mức người dùng.
+
+  ```git config --system```: Để cấu hình cho toàn bộ hệ thống, áp dụng cho toàn bộ người dùng và toàn bộ repo.
+
+Ví dụ cấu hình trình editor bằng ```git config```:
+```bash
+~ git config --global core.editor "'c:/program files/sublime text 3/sublimetext.exe' -w"~
+```
+Ví dụ cấu hình Merge tool: Xem sự khác nhau của file
+```bash
+git config --global merge.tool kdiff3
+```
+Ví dụ về cấu hình color:
+```bash
+git config --global color.ui false
+git config --global color.branch
+git config --global color.diff
+git config --global color.decorate.
+git config --global color.grep
+git config --global color.pager
+git config --global color.status
+```
+Ví dụ về cấu hình config alias:
+```bash
+git config --global alias.ci commit
+```
