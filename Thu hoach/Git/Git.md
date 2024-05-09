@@ -56,7 +56,7 @@ git clone <repo url>
 
 #### Git config
   Lệnh này dùng để cấu hình cho git.
-  
+
   ```git config --local```: Để cấu hình cho git ở local của repo thôi. Mặc định gõ ```git config ``` mà không thêm gì thì sẽ là cấu hình local.
 
   ```git config --global```: Để cấu hình cho người dùng cụ thể. Tức là cấu hình ở mức người dùng.
@@ -85,3 +85,16 @@ Ví dụ về cấu hình config alias:
 ```bash
 git config --global alias.ci commit
 ```
+
+#### Git add
+```git add``` để báo cho Git biết rằng bạn muốn thêm file vào stage area của Git. Git cần theo dõi file này. Và các lần ```commit``` tiếp theo thì hãy thêm file này vô. ```git add``` không ảnh hưởng đến repo. Repo chỉ thực sự được cập nhật khi gõ ```git commit```.
+
+Hai lệnh ```git add``` và ```git commit``` là các lệnh cơ bản để ghi lại lịch sử thay đổi của code.
+
+Thay vì mỗi lần sửa file gì thì cần commit vào dự án. ```git add``` thêm nhiều sự thay đổi vào một logic, sau đó commit một lần thôi.
+
+#### Git commit
+```git commit``` dùng để lưu lại những gì đã ở stage vào repo. Lệnh này sẽ chạy sau lệnh ```git add```.
+
+
+
